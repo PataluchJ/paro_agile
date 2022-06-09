@@ -20,6 +20,7 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 add_subdirectory(exercise1)
+add_subdirectory(exercise2)
 add_subdirectory(application)
 
 

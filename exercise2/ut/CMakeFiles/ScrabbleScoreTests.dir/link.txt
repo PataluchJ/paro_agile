@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ScrabbleScoreTests.dir/scrabble-score-tests.cpp.o  -o ScrabbleScoreTests  -Wl,-rpath,/home/jedrek/paro_agile/exercise2 ../libScrabbleScore.so ../../lib/libgtest_main.a ../../lib/libgtest.a -lpthread 
