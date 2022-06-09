@@ -1,0 +1,7 @@
+As a USER, I can set up playing board.
+
+GIVEN: User is logged in.
+AND User isn't already in game.
+WHEN: User select set up option
+THEN: Board is created.
+AND Board is displayed.
