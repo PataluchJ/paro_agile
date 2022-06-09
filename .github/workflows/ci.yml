@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   Tests:
+    name: Exercise tests
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -15,3 +16,19 @@ jobs:
       run: ./exercise1/ut/DayOfYearTests
     - name: exercise_2
       run: ./exercise2/ut/ScrabbleScoreTests
+  formatting-check:
+    name: Formatting Check
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        path:
+          - 'exercise1/src'
+          - 'exercise2/src'
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run clang-format style check for C/C++/Protobuf programs.
+      uses: jidicula/clang-format-action@v4.5.0
+      with:
+        clang-format-version: '13'
+        check-path: ${{ matrix.path }}
+        fallback-style: 'Mozilla' # optional
