@@ -5,3 +5,25 @@ AND User isn't already in game.
 WHEN: User select set up option
 THEN: Board is created.
 AND Board is displayed.
+
+As a User, I can move my pieces on board.
+
+GIVEN: User is logged in
+AND User is playing a game
+WHEN it is User turn
+THEN User rolls a 2d7 dice 
+AND his pawn moves by rolled amout forward
+
+As a User, I can buy property on map
+
+GIVEN: User is playing a game
+AND User's pawn stands on unclaimed field
+AND User's possesed enought money
+THEN User buys location
+AND location is registered as users property
+
+As a USER, I can get a reward for passing a Start tile.
+
+GIVEN: User is playing a game
+WHEN: User passes through a Start tile
+THEN: User gets $200
