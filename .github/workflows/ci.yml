@@ -13,5 +13,3 @@ jobs:
       run: make
     - name: exercise_1
       run: ./exercise1/ut/DayOfYearTests
-    - name: exercise_2
-      run: 
