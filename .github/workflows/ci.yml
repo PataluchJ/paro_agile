@@ -14,4 +14,4 @@ jobs:
     - name: exercise_1
       run: ./exercise1/ut/DayOfYearTests
     - name: exercise_2
-      run: /exercises2/ut/ScrabbleScoreTests
+      run: ./exercise2/ut/ScrabbleScoreTests
