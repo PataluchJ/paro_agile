@@ -3,7 +3,7 @@ name: CI
 on: [push]
 
 jobs:
-  build:
+  Tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -11,9 +11,7 @@ jobs:
       run: cmake .
     - name: make
       run: make
-  tests:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
     - name: exercise_1
       run: ./exercise1/ut/DayOfYearTests
+    - name: exercise_2
+      run: 
