@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libScrabbleScore.so -o libScrabbleScore.so CMakeFiles/ScrabbleScore.dir/src/scrabble-score.cpp.o 

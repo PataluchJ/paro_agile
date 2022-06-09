@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jedrek/paro_agile/exercise2/src/scrabble-score.cpp
+scrabble-score.hpp
+/home/jedrek/paro_agile/exercise2/src/scrabble-score.hpp
+
+exercise2/include/scrabble-score.hpp
+
